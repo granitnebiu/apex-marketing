@@ -31,16 +31,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-h2.title {
-  font-size: 50px;
-  text-align: left;
-  font-family: "Quicksand", Sans-serif;
-  font-size: 65px;
-  font-weight: 700;
-  text-transform: none;
-  line-height: 1.1em;
-  text-shadow: 2px 5px 0px rgb(0 0 0 / 10%);
-  color: #FFF;
-  margin: 0px 0px 20px 0px;
-}

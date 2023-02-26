@@ -5,6 +5,7 @@ import { VscRocket } from "react-icons/vsc";
 import { HiOutlineUsers } from "react-icons/hi";
 
 import { HeroInfos } from "typing";
+import Image from "next/image";
 
 const heroInfo: HeroInfos[] = [
    {
@@ -25,10 +26,12 @@ const heroInfo: HeroInfos[] = [
 ];
 export default function HeroSection() {
    return (
-      <section className="relative w-full rounded-bl-[100px] bg-primary">
-         <div className="section_container flex w-full flex-wrap bg-primary">
-            <div className="w-1/2 pt-[100px] pb-[220px]">
-               <h2 className="title">Best Business Marketing</h2>
+      <section className="relative w-full bg-primary md:rounded-bl-[100px]">
+         <div className="section_container   flex w-full flex-wrap rounded-bl-[100px] bg-primary">
+            <div className="pt-[50px] pb-[50px] md:w-1/2 md:pb-[180px] lg:pt-[100px] lg:pb-[220px] ">
+               <h2 className="font-quicksand drop-shadow-3xl mb-5 text-left text-[50px] font-bold leading-[1.1em] text-white">
+                  Best Business Marketing
+               </h2>
                <p className="font-quicksand pb-8 text-lg text-white">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elitd do
                   eiusmod tempor incididunt ut lore magna aliqua. Quis ipsum
@@ -36,15 +39,25 @@ export default function HeroSection() {
                </p>
                <Button btnName="Get Started" btnStyle="w-auto px-8 py-3" />
             </div>
-
             <div className="w-1/2"></div>
          </div>
-         <div className=" absolute -bottom-12 ml-[120px] w-full rounded-tl-[50px] bg-secondary/95 py-[55px] text-white">
-            <div className="section_container flex">
+         <Image
+            src="/images/hero-marketing.png"
+            alt="Vercel Logo"
+            width="0"
+            height="0"
+            sizes="90vw"
+            className="bottom-0 right-0 h-full w-full object-contain object-right-bottom md:absolute md:w-1/2 lg:w-full"
+         />
+         <div className="absolute w-full bg-secondary/95 py-[55px] text-white md:-bottom-24 md:rounded-tl-[50px] lg:-bottom-12 lg:ml-[120px]">
+            <div className="section_container flex flex-col md:flex-row">
                {heroInfo?.map((heros, index) => (
-                  <div key={index} className="flex w-1/3 space-x-8">
-                     {heros.icon}
-                     <div>
+                  <div
+                     key={index}
+                     className="flex w-full flex-col items-center py-8 md:w-1/3 md:flex-row md:space-x-8 md:py-0"
+                  >
+                     <span className="pb-4 md:pb-0">{heros.icon}</span>
+                     <div className="text-center md:text-left">
                         <h3 className="text-xl font-bold">{heros.title}</h3>
                         <p className="font-quicksand text-lg text-white">
                            {heros.description}

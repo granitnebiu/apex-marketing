@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { MenuItem } from "typing";
+import Button from "./Button";
 
 const menuItems: MenuItem[] = [
    {
@@ -33,6 +34,7 @@ export default function Menu() {
                {menu.label}
             </Link>
          ))}
+         <Button btnName="Get a Quote" btnStyle="w-auto px-5 py-2" />
       </nav>
    );
 }
