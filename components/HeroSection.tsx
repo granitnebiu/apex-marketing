@@ -47,7 +47,7 @@ export default function HeroSection() {
             width="0"
             height="0"
             sizes="90vw"
-            className="bottom-0 right-0 h-full w-full object-contain object-right-bottom md:absolute md:w-1/2 lg:w-full"
+            className="pointer-events-none bottom-0 right-0 h-full w-full object-contain object-right-bottom md:absolute md:w-1/2 lg:w-full"
          />
          <div className="absolute w-full bg-secondary/95 py-[55px] text-white md:-bottom-24 md:rounded-tl-[50px] lg:-bottom-12 lg:ml-[120px]">
             <div className="section_container flex flex-col md:flex-row">
