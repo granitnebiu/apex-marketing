@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Menu from "@/Header";
+import Header from "@/Header";
+import HeroSection from "@/HeroSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,20 +19,8 @@ export default function Home() {
             />
             <link rel="icon" href="/favicon.ico" />
          </Head>
-
-         <main>
-            <Image
-               src="/vercel.svg"
-               alt="Vercel Logo"
-               className="w-48"
-               width={100}
-               height={24}
-               priority
-            />
-            <h1 className="text-3xl text-cyan-500 font-bold underline">
-               Hello world!
-            </h1>
-         </main>
+         <Header />
+         <HeroSection />
       </>
    );
 }

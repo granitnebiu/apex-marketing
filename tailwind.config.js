@@ -15,8 +15,9 @@ module.exports = {
             example2: ["var(--font-example2)"],
          },
          colors: {
-            primary: "#FF5732",
-            secondary: "#707070",
+            primary: "#E74A3E",
+            secondary: "#244178",
+            secondaryLight: "#0050B8",
             tertiary: "#FF5732",
          },
       },
