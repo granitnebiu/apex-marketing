@@ -24,6 +24,11 @@ export interface MarketingSolutionsObj  {
   value: number,
 }
 
+export interface CaseObj  {
+  caseImg: string,
+  caseAlt: string,
+  caseDescription: string,
+}
 
 export interface Percentage  {
   percentage: number,

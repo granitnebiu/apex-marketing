@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./partials/Button";
+import Button from "../partials/Button";
 import { SiLichess } from "react-icons/si";
 import { VscRocket } from "react-icons/vsc";
 import { HiOutlineUsers } from "react-icons/hi";

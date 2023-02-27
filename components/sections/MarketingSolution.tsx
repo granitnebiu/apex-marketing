@@ -38,7 +38,7 @@ export default function MarketingSolution() {
                   titleStyle="text-[40px] md:text-[50px] "
                   title="Marketing Solutions for Your Company"
                />
-               <p className="font-quicksand text-lg font-normal text-primary md:w-2/3">
+               <p className="font-quicksand text-lg font-normal text-primary">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elitd do
                   eiusmod tempor incididunt ut lore magna aliqua. Quis ipsum
                   suspendisse ultrices gravida.
