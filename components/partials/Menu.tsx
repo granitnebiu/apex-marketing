@@ -28,7 +28,7 @@ const menuItems: MenuItem[] = [
 
 export default function Menu() {
    return (
-      <nav className="space-x-8 font-bold uppercase text-white">
+      <nav className="space-x-8 font-quicksand font-bold uppercase text-white">
          {menuItems.map((menu, index) => (
             <Link key={index} href={menu.url}>
                {menu.label}

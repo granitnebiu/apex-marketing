@@ -29,10 +29,10 @@ export default function HeroSection() {
       <section className="relative w-full bg-primary md:rounded-bl-[100px]">
          <div className="section_container   flex w-full flex-wrap rounded-bl-[100px] bg-primary">
             <div className="pt-[50px] pb-[50px] md:w-1/2 md:pb-[180px] lg:pt-[100px] lg:pb-[220px] ">
-               <h2 className="font-quicksand drop-shadow-3xl mb-5 text-left text-[50px] font-bold leading-[1.1em] text-white">
+               <h2 className="drop-shadow-3xl mb-5 text-left font-quicksand text-[50px] font-bold leading-[1.1em] text-white">
                   Best Business Marketing
                </h2>
-               <p className="font-quicksand pb-8 text-lg text-white">
+               <p className="pb-8 font-quicksand text-lg text-white">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elitd do
                   eiusmod tempor incididunt ut lore magna aliqua. Quis ipsum
                   suspendisse ultrices gravida.
@@ -49,7 +49,7 @@ export default function HeroSection() {
             sizes="90vw"
             className="pointer-events-none bottom-0 right-0 h-full w-full object-contain object-right-bottom md:absolute md:w-1/2 lg:w-full"
          />
-         <div className="absolute w-full bg-secondary/95 py-[55px] text-white md:-bottom-24 md:rounded-tl-[50px] lg:-bottom-12 lg:ml-[120px]">
+         <div className="absolute w-full bg-secondary/95 py-[55px] font-quicksand text-white md:-bottom-24 md:rounded-tl-[50px] lg:-bottom-12 lg:ml-[120px]">
             <div className="section_container flex flex-col md:flex-row">
                {heroInfo?.map((heros, index) => (
                   <div
@@ -59,7 +59,7 @@ export default function HeroSection() {
                      <span className="pb-4 md:pb-0">{heros.icon}</span>
                      <div className="text-center md:text-left">
                         <h3 className="text-xl font-bold">{heros.title}</h3>
-                        <p className="font-quicksand text-lg text-white">
+                        <p className=" text-lg text-white">
                            {heros.description}
                         </p>
                      </div>
