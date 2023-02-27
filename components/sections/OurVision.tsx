@@ -2,8 +2,9 @@ import Title from "@/partials/Title";
 import Image from "next/image";
 import React from "react";
 import { FaBullhorn, FaUsers, FaChartLine } from "react-icons/fa";
+import { OurVisionObj } from "typing";
 
-const ourVision = [
+const ourVision: OurVisionObj[] = [
    {
       imgUrl: "/images/ourvision/ourvision-1.jpg",
       imgDescription: "Digital Marketing",
@@ -42,20 +43,20 @@ export default function OurVision() {
          />
 
          <section className="section_container pt-24">
-            <div className="mt-20">
+            <div className="md:mt-20">
                <Title
-                  titleStyle="text-[50px] text-center"
+                  titleStyle="text-[40px] md:text-[50px] text-center"
                   title="Our Vision, Our Passion"
                />
-               <p className="mx-auto block w-2/3 text-center font-quicksand text-lg font-normal text-fourth">
+               <p className="mx-auto block text-center font-quicksand text-lg font-normal text-fourth md:w-2/3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elitd do
                   eiusmod tempor incididunt ut lore magna aliqua. Quis ipsum
                   suspendisse ultrices gravida.
                </p>
             </div>
-            <div className="flex py-24">
+            <div className="flex flex-col py-24 md:flex-row">
                {ourVision?.map((vision, index) => (
-                  <div key={index} className="space-y-4 px-4">
+                  <div key={index} className="space-y-3 py-4 px-4">
                      <div className="relative">
                         <Image
                            src={vision.imgUrl}

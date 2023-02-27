@@ -26,9 +26,9 @@ const heroInfo: HeroInfos[] = [
 ];
 export default function HeroSection() {
    return (
-      <section className="relative w-full bg-primary md:rounded-bl-[100px]">
+      <section className="relative  w-full bg-primary md:rounded-bl-[100px]">
          <div className="section_container   flex w-full flex-wrap rounded-bl-[100px] bg-primary">
-            <div className="pt-[50px] pb-[50px] md:w-1/2 md:pb-[180px] lg:pt-[100px] lg:pb-[220px] ">
+            <div className="py-[50px] md:w-1/2 md:pb-[180px] lg:pt-[100px] lg:pb-[220px] ">
                <h2 className="drop-shadow-3xl mb-5 text-left font-quicksand text-[50px] font-bold leading-[1.1em] text-white">
                   Best Business Marketing
                </h2>
@@ -49,7 +49,7 @@ export default function HeroSection() {
             sizes="90vw"
             className="pointer-events-none bottom-0 right-0 h-full w-full object-contain object-right-bottom md:absolute md:w-1/2 lg:w-full"
          />
-         <div className="absolute w-full bg-secondary/95 py-[55px] font-quicksand text-white md:-bottom-24 md:rounded-tl-[50px] lg:-bottom-12 lg:ml-[120px]">
+         <div className="w-full bg-secondary/95 py-[55px] font-quicksand text-white md:absolute md:-bottom-24 md:rounded-tl-[50px] lg:-bottom-12 lg:ml-[120px]">
             <div className="section_container flex flex-col md:flex-row">
                {heroInfo?.map((heros, index) => (
                   <div
