@@ -11,8 +11,8 @@ module.exports = {
    theme: {
       extend: {
          fontFamily: {
-            example: ["var(--font-example)"],
-            example2: ["var(--font-example2)"],
+            quicksand: ["var(--font-quicksand)"],
+            // example2: ["var(--font-example2)"],
          },
          colors: {
             primary: "#2E3840",
