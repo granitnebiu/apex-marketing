@@ -19,6 +19,16 @@ export interface OurVisionObj  {
   cardIcon: ReactElement,
 }
 
+export interface MarketingSolutionsObj  {
+  title: string,
+  value: number,
+}
+
+
+export interface Percentage  {
+  percentage: number,
+}
+
 export interface ButtonProps {
   btnName: string;
   btnStyle: string;
