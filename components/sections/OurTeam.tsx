@@ -108,10 +108,10 @@ export default function OurTeam() {
                                  {fsocials.facebook}
                               </p>
                               <p className="flex h-12 w-12 items-center justify-center rounded-full bg-red-700 text-white">
-                                 {fsocials.facebook}
+                                 {fsocials.twitter}
                               </p>
                               <p className="flex h-12 w-12 items-center justify-center rounded-full bg-red-700 text-white">
-                                 {fsocials.facebook}
+                                 {fsocials.linkedIn}
                               </p>
                            </div>
                         ))}
