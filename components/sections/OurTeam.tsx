@@ -1,11 +1,11 @@
 import Title from "@/partials/Title";
 import Image from "next/image";
 import React from "react";
-import { OurVisionObj } from "typing";
+import { OurTeamObj } from "typing";
 
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
-const ourTeam: OurTeam[] = [
+const ourTeam: OurTeamObj[] = [
    {
       imgUrl: "/images/team/team1.jpg",
       imgDescription: "Robert Park",

@@ -30,6 +30,20 @@ export interface CaseObj  {
   caseDescription: string,
 }
 
+export interface OurTeamObj{
+  imgUrl: string
+  imgDescription: string
+  cardTitle: string
+  cardDescription:  string
+  cardIcon: [
+     {
+        facebook: ReactElement,
+        twitter: ReactElement,
+        linkedIn: ReactElement,
+     },
+  ],
+}
+
 export interface Percentage  {
   percentage: number,
 }
