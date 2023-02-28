@@ -51,7 +51,7 @@ const companiesList = [
 ];
 export default function BestCustomer() {
    return (
-      <div className="relative bg-secondary/90">
+      <div className="relative bg-primary/90">
          <Image
             src="/images/ourvision/background-vision.png"
             alt="Vercel Logo"

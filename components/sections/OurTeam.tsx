@@ -73,7 +73,7 @@ export default function OurTeam() {
          />
 
          <section className="section_container pt-24">
-            <div className="md:mt-20">
+            <div className="">
                <Title
                   titleStyle="text-[40px] md:text-[50px] text-center"
                   title="Our Team of Professionals"
