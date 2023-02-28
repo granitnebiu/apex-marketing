@@ -27,6 +27,7 @@ const PercentageRange = ({ percentage }: Percentage) => {
             height: "15px",
             backgroundColor: "#eee",
             position: "relative",
+            borderRadius: "20px",
          }}
       >
          <animated.div
@@ -36,7 +37,7 @@ const PercentageRange = ({ percentage }: Percentage) => {
                position: "absolute",
                top: 0,
                left: 0,
-
+               borderRadius: "20px",
                ...springProps,
             }}
          />

@@ -52,12 +52,12 @@ const SliderEm: React.FC<EmblaCarouselProps> = ({ slides }) => {
    }, [embla]);
 
    return (
-      <div className="relative">
+      <div className="relative -ml-14 md:ml-0">
          <div className="overflow-hidden" ref={viewportRef}>
             <div className="md:ml-[calc(var(--slide-spacing) * -1)] flex h-auto flex-row">
                {slides.map((slide, index) => (
                   <div
-                     className="relative mr-4 w-[70%] min-w-0 flex-shrink-0 rounded-2xl bg-white p-8 font-quicksand  text-primary md:m-8 md:w-[100%]"
+                     className="relative mr-2 w-[70%] min-w-0 flex-shrink-0 rounded-2xl bg-white p-8 font-quicksand  text-primary md:m-8 md:w-[100%]"
                      key={index}
                   >
                      <p className="text-2xl font-bold text-primary">
