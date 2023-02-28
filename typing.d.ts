@@ -29,7 +29,12 @@ export interface CaseObj  {
   caseAlt: string,
   caseDescription: string,
 }
-
+export interface LatesNewsObj {
+  postImage: string,
+  postAlt: string,
+  postTitle: string,
+  postDate: ReactElement,
+}
 export interface OurTeamObj{
   imgUrl: string
   imgDescription: string

@@ -8,6 +8,8 @@ import CaseStudies from "@/sections/CaseStudies";
 import Footer from "@/Footer";
 import BestCustomer from "@/sections/BestCustomer";
 import OurTeam from "@/sections/OurTeam";
+import LatestNews from "@/sections/LatestNews";
+import GetInTouch from "@/sections/GetInTouch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +32,8 @@ export default function Home() {
          <CaseStudies />
          <BestCustomer />
          <OurTeam />
+         <LatestNews />
+         <GetInTouch />
          <Footer />
       </>
    );
