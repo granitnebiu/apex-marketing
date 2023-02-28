@@ -6,6 +6,7 @@ import OurVision from "@/sections/OurVision";
 import MarketingSolution from "@/sections/MarketingSolution";
 import CaseStudies from "@/sections/CaseStudies";
 import Footer from "@/Footer";
+import BestCustomer from "@/sections/BestCustomer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function Home() {
          <OurVision />
          <MarketingSolution />
          <CaseStudies />
+         <BestCustomer />
          <Footer />
       </>
    );
