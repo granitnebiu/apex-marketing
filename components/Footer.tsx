@@ -69,7 +69,7 @@ export default function Footer() {
             />
             <div className="section_container z-10 w-full">
                <div className="grid-col-1 grid gap-8 py-24 text-white md:grid-cols-2 lg:grid-cols-4">
-                  <div className="h-24 space-y-8 ">
+                  <div className=" space-y-8 ">
                      <h2 className="border-l-2 px-4 font-quicksand text-lg font-bold">
                         About Bosa Marketing
                      </h2>
@@ -105,7 +105,7 @@ export default function Footer() {
                               width="0"
                               height="0"
                               sizes="100vw"
-                              className="h-10 w-24"
+                              className="h-14 w-24 md:h-10"
                            />
                            <Link
                               href=""
@@ -121,7 +121,7 @@ export default function Footer() {
                               width="0"
                               height="0"
                               sizes="100vw"
-                              className="h-10 w-24"
+                              className="h-14 w-24 md:h-10"
                            />
                            <Link
                               href=""
@@ -164,12 +164,12 @@ export default function Footer() {
                   </div>
                ))}
             </div>
-            <div className="flex-end flex flex-col items-end font-quicksand text-sm text-white/50">
-               <p>
+            <div className="flex-end flex flex-col items-center space-y-8 font-quicksand text-sm text-white/50 md:items-end md:space-y-0">
+               <p className="text-center">
                   Copyright © 2023 Apex Marketing. Powered by
                   <span className="text-white"> Apex Marketing</span>
                </p>
-               <div className="flex text-right text-white">
+               <div className="flex text-white md:text-right">
                   <Link className="border-x-2 px-4" href="">
                      Terms & Conditions
                   </Link>

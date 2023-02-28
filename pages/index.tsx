@@ -7,6 +7,7 @@ import MarketingSolution from "@/sections/MarketingSolution";
 import CaseStudies from "@/sections/CaseStudies";
 import Footer from "@/Footer";
 import BestCustomer from "@/sections/BestCustomer";
+import OurTeam from "@/sections/OurTeam";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function Home() {
          <MarketingSolution />
          <CaseStudies />
          <BestCustomer />
+         <OurTeam />
          <Footer />
       </>
    );
