@@ -88,7 +88,7 @@ export default function OurTeam() {
                {ourTeam?.map((vision, index) => (
                   <div
                      key={index}
-                     className="relative w-full space-y-3 border-2 bg-white p-8"
+                     className="relative w-full space-y-3 bg-white p-8 drop-shadow-xl"
                   >
                      <Image
                         src={vision.imgUrl}

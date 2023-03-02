@@ -57,7 +57,7 @@ const categories = [
 ];
 export default function Footer() {
    return (
-      <footer className="sticky top-[100vh] bg-primary ">
+      <footer className="sticky top-[100vh] bg-primary">
          <div className="relative bg-primary/90">
             <Image
                src="/images/bg-footer.jpg"

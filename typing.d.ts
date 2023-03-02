@@ -64,3 +64,16 @@ export interface TitleProps {
 }
   
   
+export interface WorkingProcess{
+  icon: ReactElement;
+  title: string;
+  description: string;
+  color: string,
+  position: string,
+}
+
+
+interface ChildrenComp {
+  children: React.ReactNode;
+}
+    

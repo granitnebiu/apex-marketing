@@ -19,7 +19,11 @@ const percentagesData: MarketingSolutionsObj[] = [
       value: 85,
    },
 ];
-export default function MarketingSolution() {
+export default function MarketingSolution({
+   hideElements = false,
+   marketingDescription = "",
+   marketingTitle = "",
+}) {
    return (
       <section className="section_container flex flex-col space-y-12 md:flex-row md:space-y-0 md:space-x-20 md:py-12">
          <div className="w-full md:w-1/2">
@@ -29,7 +33,7 @@ export default function MarketingSolution() {
                width="0"
                height="0"
                sizes="80vw"
-               className="h-full w-full"
+               className="h-full w-full object-contain"
             />
          </div>
          <div className="flex w-full flex-col md:w-1/2">
@@ -38,22 +42,27 @@ export default function MarketingSolution() {
                   titleStyle="text-[40px] md:text-[50px] "
                   title="Marketing Solutions for Your Company"
                />
+               <p className="pb-4 font-quicksand text-2xl font-semibold text-primary">
+                  {marketingTitle}
+               </p>
+
                <p className="font-quicksand text-lg font-normal text-primary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elitd do
-                  eiusmod tempor incididunt ut lore magna aliqua. Quis ipsum
-                  suspendisse ultrices gravida.
+                  {marketingDescription}
                </p>
             </div>
-            <div className="">
-               {percentagesData?.map((percentages, index) => (
-                  <div key={index} className="pb-4">
-                     <p className="font-quicksand text-xl font-semibold">
-                        {percentages?.title}
-                     </p>
-                     <PercentageRange percentage={percentages.value} />
-                  </div>
-               ))}
-            </div>
+            {hideElements === false && (
+               <div className="">
+                  {percentagesData?.map((percentages, index) => (
+                     <div key={index} className="pb-4">
+                        <p className="font-quicksand text-xl font-semibold">
+                           {percentages?.title}
+                        </p>
+
+                        <PercentageRange percentage={percentages.value} />
+                     </div>
+                  ))}
+               </div>
+            )}
             <div>
                <div className="flex items-center justify-between py-4">
                   <div className="flex items-center space-x-4">
