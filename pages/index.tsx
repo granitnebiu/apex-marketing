@@ -28,7 +28,7 @@ export default function Home() {
          <Header />
          <HeroSection />
          <OurVision />
-         <MarketingSolution />
+         <MarketingSolution marketingDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elitd do eiusmod tempor incididunt ut lore magna aliqua. Quis ipsum suspendisse ultrices gravida." />
          <CaseStudies />
          <BestCustomer />
          <OurTeam />
