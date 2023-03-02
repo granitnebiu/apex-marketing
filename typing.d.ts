@@ -72,4 +72,8 @@ export interface WorkingProcess{
   position: string,
 }
 
+
+interface ChildrenComp {
+  children: React.ReactNode;
+}
     
