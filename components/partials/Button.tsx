@@ -5,7 +5,7 @@ export default function Button({ btnName, btnStyle }: ButtonProps) {
    return (
       <Link href="/">
          <button
-            className={`${btnStyle} font-quicksand font-xl rounded-full bg-secondary font-bold text-white transition duration-300 ease-out hover:bg-secondaryLight hover:ease-in`}
+            className={`${btnStyle} font-xl rounded-full bg-secondary font-quicksand font-bold text-white transition duration-300 ease-out hover:bg-secondaryLight hover:ease-in`}
          >
             {btnName}
          </button>
