@@ -73,7 +73,13 @@ export interface WorkingProcess{
 }
 
 
-interface ChildrenComp {
+export interface ChildrenComp {
   children: React.ReactNode;
 }
     
+export interface CaseCardType{
+  title: string, 
+  description: string
+  img: string,
+  alt: string,
+}

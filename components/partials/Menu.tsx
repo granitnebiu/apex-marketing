@@ -10,11 +10,11 @@ const menuItems: MenuItem[] = [
    },
    {
       label: "About Us",
-      url: "/aboutus",
+      url: "/about-us",
    },
    {
       label: "Case Studies",
-      url: "/",
+      url: "/case-studies",
    },
    {
       label: "Blog",

@@ -127,7 +127,7 @@ export default function Aboutus() {
                <div className="">
                   <Title
                      titleStyle="text-[40px] md:text-[50px] text-center"
-                     title="Our Team of Professionals"
+                     title="Our Working Process"
                   />
                   <p className="mx-auto block text-center font-quicksand text-lg font-normal text-fourth md:w-2/3">
                      Lorem ipsum dolor sit amet, consectetur adipiscing elitd do
