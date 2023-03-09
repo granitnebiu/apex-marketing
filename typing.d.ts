@@ -83,3 +83,9 @@ export interface CaseCardType{
   img: string,
   alt: string,
 }
+
+export interface infoContact{
+  icon: ReactElement,
+  title: string, 
+  description: string,
+}
