@@ -80,7 +80,10 @@ export default function Aboutus() {
             />
             <div className="bg-secondary/30">
                <section className="section_container flex h-60 items-center ">
-                  <Title title="About Us" titleStyle="text-[60px] text-white" />
+                  <Title
+                     title="About Us"
+                     titleStyle="text-[45px] lg:text-[60px] text-white"
+                  />
                </section>
             </div>
          </div>

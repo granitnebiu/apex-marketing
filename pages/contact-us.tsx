@@ -42,7 +42,7 @@ export default function ContactUs() {
                <section className="section_container flex h-60 items-center ">
                   <Title
                      title="Contact Us"
-                     titleStyle="text-[60px] text-white"
+                     titleStyle="text-[45px] lg:text-[60px] text-white"
                   />
                </section>
             </div>
