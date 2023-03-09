@@ -1,36 +1,24 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
-import { MenuItem } from "typing";
+import { menuItems } from "~/utils/menus/menuItems";
 import Button from "./Button";
 
-const menuItems: MenuItem[] = [
-   {
-      label: "Home",
-      url: "/",
-   },
-   {
-      label: "About Us",
-      url: "/about-us",
-   },
-   {
-      label: "Case Studies",
-      url: "/case-studies",
-   },
-   {
-      label: "Blog",
-      url: "/",
-   },
-   {
-      label: "Contact Us",
-      url: "/",
-   },
-];
-
 export default function Menu() {
+   const { asPath } = useRouter();
+   const currentRoute = asPath;
    return (
-      <nav className="space-x-8 font-quicksand font-bold uppercase text-white">
+      <nav className="hidden space-x-8 font-quicksand font-bold uppercase text-white lg:block">
          {menuItems.map((menu, index) => (
-            <Link key={index} href={menu.url}>
+            <Link
+               className={`${
+                  currentRoute === menu.url
+                     ? "border-b-2 border-tertiary pb-2 text-tertiary transition duration-500"
+                     : ""
+               }  transition duration-500 hover:border-b-2 hover:border-white hover:pb-2 hover:text-white `}
+               key={index}
+               href={menu.url}
+            >
                {menu.label}
             </Link>
          ))}
