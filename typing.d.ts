@@ -89,3 +89,14 @@ export interface infoContact{
   title: string, 
   description: string,
 }
+
+export interface SliderItems{
+  slider_image: string, 
+  slider_alt: string,
+  category: string, 
+  title: string, 
+  date: string, 
+  posted_by: string, 
+  comment : string, 
+  description: string, 
+}
