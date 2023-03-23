@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FaRegCalendarAlt, FaRegComments, FaRegUser } from "react-icons/fa";
 import { cardBlogData } from "~/utils/blog-cards/blogCardData";
-import Date from "./partials/Date";
+import Date from "../partials/Date";
 
 export default function CardsBlogs() {
    return (
@@ -11,7 +11,7 @@ export default function CardsBlogs() {
             {cardBlogData?.map((cardBlog, index) => (
                <div
                   key={index}
-                  className=" group relative h-96 w-full rounded-2xl"
+                  className="group relative h-96 w-full rounded-2xl"
                >
                   <Image
                      src={`/images/blog-cards/${cardBlog?.card_image}`}

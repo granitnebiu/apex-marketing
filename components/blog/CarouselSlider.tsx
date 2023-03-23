@@ -2,8 +2,8 @@ import React, { CSSProperties } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as CarouseLResponsive } from "react-responsive-carousel";
 import Image from "next/image";
-import Title from "./partials/Title";
-import Date from "./partials/Date";
+import Title from "../partials/Title";
+import Date from "../partials/Date";
 import { FaRegCalendarAlt, FaRegUser, FaRegComments } from "react-icons/fa";
 import { sliderItems } from "~/utils/sliders/sliderItems";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";

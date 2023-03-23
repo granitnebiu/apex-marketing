@@ -110,3 +110,15 @@ export interface CardBlogData{
   posted_by: string, 
   comment : string, 
 }
+
+export interface BlogPostData{
+  post_image: string, 
+  post_alt: string,
+  category: string, 
+  title: string, 
+  date: string, 
+  posted_by: string, 
+  comment : string, 
+  description: string, 
+}
+
