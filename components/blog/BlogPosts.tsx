@@ -36,7 +36,7 @@ export default function BlogPosts() {
    ];
    return (
       <section className="section_container flex items-center justify-center pb-32 font-quicksand ">
-         <div className="flex w-full gap-x-8">
+         <div className="flex w-full flex-col gap-x-8 md:flex-row">
             <div className="grid w-full grid-cols-1 gap-8 md:w-2/3 md:grid-cols-2">
                {blogPostData?.map((post, index) => (
                   <div className="h-full space-y-4" key={index}>
@@ -75,7 +75,7 @@ export default function BlogPosts() {
                   </div>
                ))}
             </div>
-            <div className="w-1/3 space-y-6 font-quicksand">
+            <div className="w-full space-y-6 font-quicksand md:w-1/3">
                <div className="space-y-8 pb-8">
                   <TitleStyles titleText="Search" />
                   <InputForm
