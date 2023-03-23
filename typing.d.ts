@@ -100,3 +100,13 @@ export interface SliderItems{
   comment : string, 
   description: string, 
 }
+
+export interface CardBlogData{
+  card_image: string, 
+  card_alt: string,
+  category: string, 
+  title: string, 
+  date: string, 
+  posted_by: string, 
+  comment : string, 
+}
