@@ -3,8 +3,8 @@ interface Props {
    type: string;
    name: string;
    id: string;
-   icon: any;
-   showIcons: boolean;
+   icon?: any;
+   showIcons?: boolean;
 }
 
 export default function InputForm({
